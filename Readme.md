@@ -31,6 +31,7 @@
 |
 ├── data
     ├── wines.json           # Wine list
+    ├── wine-generator.py    # A random winelist generator
 
 ```
 
@@ -54,7 +55,6 @@
 
 # Reference
 
-- Got the partial wine list from https://gist.github.com/ajubin/d331f3251db4bd239c7a1efd0af54e38
 - https://www.rust-lang.org/learn
 - https://doc.rust-lang.org/reference/index.html
 - https://rocket.rs/guide/v0.5/
