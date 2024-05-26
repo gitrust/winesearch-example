@@ -15,7 +15,7 @@
  ## Project Structure
 
  ```
- winesearch/
+ winesearch-example/
 │
 ├── backend/                 # Backend Rust code
 │   ├── Cargo.toml           # Rust dependencies file
