@@ -58,3 +58,4 @@
 - https://www.rust-lang.org/learn
 - https://doc.rust-lang.org/reference/index.html
 - https://rocket.rs/guide/v0.5/
+- https://crates.io/ to search for crates
