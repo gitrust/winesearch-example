@@ -1,0 +1,20 @@
+* text=auto
+
+
+*.txt     text
+*.md      text
+*.yaml    text eol=lf
+*.yml     text eol=lf
+*.sh      eol=lf
+*.csv     text eol=lf
+*.bat     eol=cr
+Dockerfile  text
+Makefile  eol=lf
+*.jpg     binary
+*.png     binary
+*.html    text
+*.json    text eol=lf
+*.rs      text eol=lf
+*.css     text
+*.toml    text eol=lf
+*.lock    text eol=lf
