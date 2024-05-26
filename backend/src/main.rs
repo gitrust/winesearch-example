@@ -5,6 +5,7 @@ use rocket::response::status::NotFound;
 use rocket::serde::{Serialize,Deserialize, json::Json};
 use rocket::http::Method;
 use rocket_cors::{AllowedOrigins,AllowedHeaders};
+use std::env;
 use std::fs::File;
 use std::io::BufReader;
 
@@ -20,9 +21,8 @@ struct Wine {
     winery: Option<String>
 }
 
-async fn load_wines() -> Vec<Wine> {
-    let file_path = "C:\\tmp\\wines.json";
-    let file = File::open(file_path).expect("file should open read only");
+async fn load_wines(file_path: &String) -> Vec<Wine> {
+    let file = File::open(&file_path).expect("file should open read only");
     let reader = BufReader::new(file);
     serde_json::from_reader(reader).expect("file should be proper JSON")
 }
@@ -61,8 +61,19 @@ async fn search_wines(q: Option<String>, wines: &rocket::State<Vec<Wine>>) ->  R
 
 #[rocket::main]
 async fn main() {
+    // get all arguments
+    let args: Vec<String> = env::args().collect();
+
+    // Check if the correct number of arguments are passed
+    if args.len() != 2 {
+        eprintln!("Usage: {} <file_path>", args[0]);
+        std::process::exit(1);
+    }
+
+    let file_path = &args[1];
+
     // Load wines into memory
-    let wines = load_wines().await;
+    let wines = load_wines(file_path).await;
 
     // Configure CORS
     let cors = rocket_cors::CorsOptions {
