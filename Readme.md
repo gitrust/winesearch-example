@@ -21,12 +21,37 @@
 │   ├── Cargo.toml           # Rust dependencies file
 │   ├── src/                 # Source code directory
 │   │   ├── main.rs          # Main entry point for the backend
-│   │   ├── api/             # API route handlers
-│   │   ├── models/          # Data models
-│   │   └── utils/           # Utility functions
+│   │   ├── api/             # API route handlers (TODO)
+│   │   ├── models/          # Data models (TODO)
+│   │   └── utils/           # Utility functions (TODO)
 │
 └── frontend/                # Frontend code
     ├── index.html           # 
     ├── pyserver.py          # a simple webserver in Python
 
 ```
+
+## Requirements
+
+- Install Rust-lang
+- Install Python (3.x) for the webserver
+- I use a Makefile for convenient short commands in the console
+
+## Build 
+
+- `make build` to build the rust backend
+
+## Run
+
+- start backend by `make run-backend`
+- start frontend webserver by `make run-app`
+- open `http://localhost:8080/` in Webbrowser
+- REST API is available on `http://127.0.0.1:8000`
+
+
+# Reference
+
+- Got the partial wine list from https://gist.github.com/ajubin/d331f3251db4bd239c7a1efd0af54e38
+- https://www.rust-lang.org/learn
+- https://doc.rust-lang.org/reference/index.html
+- https://rocket.rs/guide/v0.5/

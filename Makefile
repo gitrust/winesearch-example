@@ -5,5 +5,5 @@ run-app:
 run-backend:
 	cd backend && cargo run
 
-build-backend:
+build:
 	cd backend && cargo build
