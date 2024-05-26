@@ -21,7 +21,7 @@ async fn load_wines(file_path: &String) -> Vec<Wine> {
 #[rocket::main]
 async fn main() {
     // Initialize the logger
-    env_logger::init();
+    //env_logger::init();
 
     // Get all arguments
     let args: Vec<String> = env::args().collect();
