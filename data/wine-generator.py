@@ -9,38 +9,38 @@ import random
 wines_data = {
     "USA": {
         "provinces": ["California", "Oregon", "Washington"],
-        "titles": ["Chardonnay", "Merlot", "Zinfandel"],
-        "wineries": ["Napa Valley Winery", "Robert Mondavi", "Ridge Vineyards"]
+        "titles": ["Chardonnay", "Merlot", "Zinfandel", "Pinot Noir", "Cabernet Sauvignon"],
+        "wineries": ["Napa Valley Winery", "Robert Mondavi", "Ridge Vineyards", "Screaming Eagle", "Stag's Leap Wine Cellars"]
     },
     "France": {
         "provinces": ["Bordeaux", "Burgundy", "Rhone"],
-        "titles": ["Cabernet Sauvignon", "Pinot Noir", "Syrah"],
-        "wineries": ["Chateau Margaux", "Domaine de la Romanee-Conti", "E. Guigal"]
+        "titles": ["Cabernet Sauvignon", "Pinot Noir", "Syrah", "Chardonnay", "Merlot"],
+        "wineries": ["Chateau Margaux", "Domaine de la Romanee-Conti", "E. Guigal", "Chateau Lafite Rothschild", "Chateau Latour"]
     },
     "Italy": {
         "provinces": ["Tuscany", "Piedmont", "Veneto"],
-        "titles": ["Sangiovese", "Nebbiolo", "Prosecco"],
-        "wineries": ["Antinori", "Gaja", "Masi"]
+        "titles": ["Sangiovese", "Nebbiolo", "Prosecco", "Chianti", "Barolo"],
+        "wineries": ["Antinori", "Gaja", "Masi", "Frescobaldi", "Allegrini"]
     },
     "Argentina": {
         "provinces": ["Mendoza", "Salta", "Patagonia"],
-        "titles": ["Malbec", "Torrontes", "Bonarda"],
-        "wineries": ["Catena Zapata", "Bodega Colome", "Bodega del Fin del Mundo"]
+        "titles": ["Malbec", "Torrontes", "Bonarda", "Cabernet Franc", "Syrah"],
+        "wineries": ["Catena Zapata", "Bodega Colome", "Bodega del Fin del Mundo", "Zuccardi", "Luigi Bosca"]
     },
     "Germany": {
         "provinces": ["Rheingau", "Mosel", "Pfalz"],
-        "titles": ["Riesling", "Spatburgunder", "Silvaner"],
-        "wineries": ["Schloss Johannisberg", "Dr. Loosen", "Bassermann-Jordan"]
+        "titles": ["Riesling", "Spatburgunder", "Silvaner", "Gewurztraminer", "Dornfelder"],
+        "wineries": ["Schloss Johannisberg", "Dr. Loosen", "Bassermann-Jordan", "Fritz Haag", "Joh. Jos. Prum"]
     },
     "Spain": {
         "provinces": ["Rioja", "Ribera del Duero", "Priorat"],
-        "titles": ["Tempranillo", "Garnacha", "Monastrell"],
-        "wineries": ["Marques de Riscal", "Vega Sicilia", "Clos Mogador"]
+        "titles": ["Tempranillo", "Garnacha", "Monastrell", "Albarino", "Verdejo"],
+        "wineries": ["Marques de Riscal", "Vega Sicilia", "Clos Mogador", "Bodegas Muga", "Bodegas Torres"]
     },
     "Australia": {
         "provinces": ["Barossa Valley", "Hunter Valley", "Margaret River"],
-        "titles": ["Shiraz", "Chardonnay", "Cabernet Sauvignon"],
-        "wineries": ["Penfolds", "Tyrell's Wines", "Vasse Felix"]
+        "titles": ["Shiraz", "Chardonnay", "Cabernet Sauvignon", "Grenache", "Riesling"],
+        "wineries": ["Penfolds", "Tyrell's Wines", "Vasse Felix", "d'Arenberg", "Henschke"]
     }
 }
 
