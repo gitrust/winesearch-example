@@ -25,9 +25,12 @@
 │   │   ├── models/          # Data models (TODO)
 │   │   └── utils/           # Utility functions (TODO)
 │
-└── frontend/                # Frontend code
-    ├── index.html           # 
-    ├── pyserver.py          # a simple webserver in Python
+│── frontend/                # Frontend code
+|   ├── index.html           # 
+|   ├── pyserver.py          # a simple webserver in Python
+|
+├── data
+    ├── wines.json           # Wine list
 
 ```
 
